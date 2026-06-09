@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start of Day Triage — 2026-06-09</title>
+</head>
+<body style="margin:0;padding:0;background:#FBF8F1;color:#1A1A1A;font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;">
+
+<!-- Outer wrapper -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FBF8F1;">
+  <tr><td align="center" style="padding:40px 16px 48px 16px;">
+
+    <!-- Main 640px container -->
+    <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+      <!-- MASTHEAD -->
+      <tr><td style="padding:0 0 0 0;">
+        <!-- 3px oxblood top rule -->
+        <div style="height:3px;background:#9B2C2C;margin-bottom:20px;"></div>
+        <!-- Kicker: START OF DAY -->
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:10px;">Start of Day</div>
+        <!-- Headline -->
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:700;color:#1A1A1A;line-height:1.2;margin-bottom:16px;">Triage &mdash; 2026-06-09</div>
+        <!-- Thin rule -->
+        <div style="height:1px;background:#E7E1D4;margin-bottom:14px;"></div>
+        <!-- Summary line -->
+        <div style="font-size:13px;color:#6B6B6B;margin-bottom:36px;">7 ranked items &middot; generated 07:09 UTC</div>
+      </td></tr>
+
+      <!-- ===== NOW ===== -->
+      <tr><td style="padding:0 0 32px 0;">
+        <!-- Section kicker -->
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:6px;">Now</div>
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-bottom:10px;">Ranked action items</div>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:20px;"></div>
+
+        <!-- ITEM 1 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#9B2C2C;line-height:1;">1</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#C0392B;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🔴 URGENT</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/pull/86932" style="color:#9B2C2C;text-decoration:underline;">App #86932 — Auto-select transaction values after tag/category deletion</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · CHANGES_REQUESTED (lakchote, Jun 1) · Updated <strong>today</strong> · 2 CI failures<br>
+                <strong>Why now:</strong> mukhrr pushed 6 more bug fixes this morning and explicitly asked lakchote to run the <em>Generate static translations</em> workflow — typecheck is failing because the new <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">categoryDisabledAlert</code> / <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">tagDisabledAlert</code> keys in <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">en.ts</code> are absent from all 8 other locale files (de, fr, it, ja, nl, pl, pt-BR, zh-hans). ESLint seatbelt has 2 new <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">@typescript-eslint/no-unsafe-type-assertion</code> violations in test files.<br>
+                <strong>Action:</strong> (1) Run <em>Generate static translations</em> workflow on this PR. (2) Ask mukhrr to fix the 2 ESLint violations in <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">SearchUIUtilsTest.ts</code> / <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;">useHoldRejectActionsTest.ts</code>. (3) Once CI is green, re-review verifying the zero-remaining-tags case is addressed and the 6 new bug fixes are sound.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 2 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">2</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#C0392B;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🔴 URGENT</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/issues/91050" style="color:#9B2C2C;text-decoration:underline;">App #91050 — [$75] Update "Save search" to "Save view"</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · <strong>Awaiting Payment · Due for payment TODAY 2026-06-09</strong> · 47 comments · Updated 2h ago<br>
+                <strong>Why now:</strong> The payment deadline is today; missing it makes this overdue.<br>
+                <strong>Action:</strong> Verify the linked PR is merged, confirm the contributor's payment, and close the issue.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 3 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">3</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#D35400;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🟠 HIGH</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/issues/66415" style="color:#9B2C2C;text-decoration:underline;">App #66415 — Remove Onyx.connect() for POLICY key in ReportUtils.ts</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · <strong>Awaiting Payment · Due for payment 2026-06-10</strong> (tomorrow) · 51 comments · Updated today<br>
+                <strong>Why now:</strong> Payment deadline is tomorrow; also ReportUtils.ts is actively being modified in PR #86932, making these changes time-sensitive to avoid merge conflicts.<br>
+                <strong>Action:</strong> Confirm payment and close once verified.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 4 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">4</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#D35400;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🟠 HIGH</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/issues/86220" style="color:#9B2C2C;text-decoration:underline;">App #86220 — [$250] Auto-choose selection for user when last value is deleted</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · Reviewing · 63 comments · <strong>CME credit candidate</strong><br>
+                <strong>Why now:</strong> PR #86932 directly resolves this issue. Once that PR is approved and merged, this issue closes for a $250 CME credit. It is the primary motivator for completing the #86932 review today.<br>
+                <strong>Action:</strong> No direct action — track PR #86932 to merge; close this issue and claim CME credit when it lands.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 5 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">5</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#D35400;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🟠 HIGH</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;">Overdue Splits-in-NewDot cluster — 7 bugs (App #91907, #91920, #91879, #91878, #91876, #91875, #91874)</span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                All open · All labeled <strong>Overdue</strong> · All from 2026-05-27 · All updated 2026-06-08<br>
+                <strong>Why now:</strong> These 7 split-expense bugs have been sitting for ~13 days and have the Overdue label. They're all active (updated yesterday in a batch) suggesting triage is ongoing but needs a resolution plan. The tracking issue <a href="https://github.com/Expensify/App/issues/72125" style="color:#9B2C2C;">App #72125</a> is "Reviewing".<br>
+                <strong>Action:</strong> Review the tracker (#72125) and either assign contributors to each bug or escalate for priority triage.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 6 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">6</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#B7950B;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🟡 MEDIUM</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/issues/92645" style="color:#9B2C2C;text-decoration:underline;">App #92645 — Android Rooms: extra space under Create room button</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · <strong>Overdue</strong> · Created 2026-06-04 · 10 comments · Updated 2026-06-08<br>
+                <strong>Why now:</strong> Became Overdue within 4 days of creation; 10 comments suggest discussion is active but not resolved.<br>
+                <strong>Action:</strong> Check if a contributor has a proposal/PR and assign; if no progress, triage for next sprint.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ITEM 7 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;margin-bottom:12px;">
+          <tr>
+            <td width="44" style="padding:16px 0 16px 16px;vertical-align:top;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#1A1A1A;line-height:1;">7</div>
+            </td>
+            <td style="padding:16px 16px 16px 12px;vertical-align:top;">
+              <div style="margin-bottom:6px;">
+                <span style="display:inline-block;background:#2471A3;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px;">🔵 INFO</span>
+                <span style="font-size:15px;font-weight:700;color:#1A1A1A;"><a href="https://github.com/Expensify/App/pull/70852" style="color:#9B2C2C;text-decoration:underline;">App #70852 — [HOLD] Update Expensify-Card-Perks.md</a></span>
+              </div>
+              <div style="font-size:13px;color:#6B6B6B;line-height:1.55;">
+                Open · [HOLD] · Last updated 2025-09-22 (9 months) · 1 addition, 1 deletion · kadiealexander completed reviewer checklist · lakchote checklist not yet posted<br>
+                <strong>Why now:</strong> Low priority while on hold, but the reviewer checklist request from melvin-bot has been unanswered for 9 months.<br>
+                <strong>Action:</strong> No action needed until the hold is lifted; keep on radar.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </td></tr>
+
+      <!-- ===== WHY ===== -->
+      <tr><td style="padding:0 0 32px 0;">
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:6px;">Why</div>
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-bottom:10px;">Per-item justification</div>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:16px;"></div>
+
+        <div style="font-size:13px;line-height:1.7;color:#1A1A1A;">
+          <p><span style="font-weight:700;color:#9B2C2C;">#1 —</span> PR #86932 lands at the top because it is the only item where lakchote's single action (running the translations workflow) directly unblocks both the PR author and CI, and sets up the $250 CME credit from issue #86220.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#2 —</span> Issue #91050 is time-critical: the "Due for payment 2026-06-09" label expires today and delayed action turns it into an overdue liability.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#3 —</span> Issue #66415 has a payment deadline of tomorrow (2026-06-10) and involves the same file (ReportUtils.ts) that PR #86932 is modifying, creating a merge-conflict risk if left unattended.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#4 —</span> Issue #86220 represents a direct $250 CME payout waiting on PR #86932 merging — awareness keeps it front of mind as the destination of this review cycle.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#5 —</span> The 7 Overdue splits bugs were all created on the same day (May 27) and all updated yesterday in a batch, suggesting active but unresolved triage — a pattern that tends to plateau without a deliberate assignment decision.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#6 —</span> Issue #92645 is a recent bug that hit Overdue faster than any of the splits bugs, indicating it may be more complex than its size suggests.</p>
+          <p><span style="font-weight:700;color:#9B2C2C;">#7 —</span> PR #70852 is explicitly on hold and requires no action today, but is surfaced so that when the hold lifts lakchote is not starting cold on the reviewer checklist.</p>
+        </div>
+      </td></tr>
+
+      <!-- ===== DRAFT REPLIES ===== -->
+      <tr><td style="padding:0 0 32px 0;">
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:6px;">Draft replies</div>
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-bottom:10px;">Ready-to-paste text</div>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:16px;"></div>
+
+        <!-- Draft 1 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border-left:3px solid #9B2C2C;border-top:1px solid #E7E1D4;border-right:1px solid #E7E1D4;border-bottom:1px solid #E7E1D4;border-radius:0 4px 4px 0;margin-bottom:14px;">
+          <tr><td style="padding:14px 16px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6B6B6B;margin-bottom:8px;">Target: App PR #86932 — reply to mukhrr's translation request (comment 4655900649)</div>
+            <div style="font-size:13px;color:#1A1A1A;line-height:1.65;">I'll trigger the <strong>Generate static translations</strong> workflow now — that should resolve the typecheck failures (missing <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;">categoryDisabledAlert</code>/<code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;">tagDisabledAlert</code> keys in the 8 non-English locale files). Once that commit lands, there will still be 2 ESLint violations to fix on your end: <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;">@typescript-eslint/no-unsafe-type-assertion</code> in <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;">tests/unit/Search/SearchUIUtilsTest.ts</code> (line 718) and <code style="font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;">tests/unit/hooks/useHoldRejectActionsTest.ts</code> (line 68) — these added 2 violations over the seatbelt cap. Use type guards instead of direct assertions. I'll re-review once both checks are green.</div>
+          </td></tr>
+        </table>
+
+        <!-- Draft 2 -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border-left:3px solid #9B2C2C;border-top:1px solid #E7E1D4;border-right:1px solid #E7E1D4;border-bottom:1px solid #E7E1D4;border-radius:0 4px 4px 0;margin-bottom:14px;">
+          <tr><td style="padding:14px 16px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6B6B6B;margin-bottom:8px;">Target: App PR #86932 — reply to Bug 2 / category-tag-tax visibility question (comment 4648777283)</div>
+            <div style="font-size:13px;color:#1A1A1A;line-height:1.65;">Yes, that makes sense. The distinction you've described — auto-hide when the default value is selected (tax row case) vs. keep and show a delete confirmation modal when a non-default value is selected — is the right pattern. Since categories and tags don't have a concept of "default", showing the delete confirmation when they're disabled is the correct analog. Let's apply that consistently to categories and tags as well.</div>
+          </td></tr>
+        </table>
+
+      </td></tr>
+
+      <!-- ===== SUGGESTED COMMANDS ===== -->
+      <tr><td style="padding:0 0 32px 0;">
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:6px;">Suggested commands</div>
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-bottom:10px;">Quick navigation</div>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:16px;"></div>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr><td style="background:#1A1A1A;border-radius:4px;padding:16px 18px;">
+            <pre style="margin:0;font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#FBF8F1;line-height:1.7;white-space:pre-wrap;word-break:break-all;"># Trigger translations workflow for PR #86932 (via GitHub Actions UI or K2 button)
+# Navigate to: https://github.com/Expensify/App/actions/workflows/generateTranslations.yml
+# Then: Run workflow → branch: fix/86220
+
+# Open PR for re-review
+open https://github.com/Expensify/App/pull/86932
+
+# Check payment status for issue due today
+open https://github.com/Expensify/App/issues/91050
+
+# Check payment status for issue due tomorrow
+open https://github.com/Expensify/App/issues/66415
+
+# Review overdue splits tracker
+open https://github.com/Expensify/App/issues/72125
+
+# ESLint failure detail (CI run from today)
+open https://github.com/Expensify/App/actions/runs/27184550795/job/80250586045
+
+# Typecheck failure detail (CI run from today)
+open https://github.com/Expensify/App/actions/runs/27184550789/job/80250585939</pre>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- ===== LINKS ===== -->
+      <tr><td style="padding:0 0 32px 0;">
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9B2C2C;margin-bottom:6px;">Links</div>
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-bottom:10px;">All referenced URLs</div>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:16px;"></div>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;border:1px solid #E7E1D4;border-radius:4px;">
+          <tr><td style="padding:16px 18px;">
+            <div style="font-size:13px;line-height:2.1;">
+              <a href="https://github.com/Expensify/App/pull/86932" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/pull/86932</a>
+              <a href="https://github.com/Expensify/App/issues/91050" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91050</a>
+              <a href="https://github.com/Expensify/App/issues/66415" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/66415</a>
+              <a href="https://github.com/Expensify/App/issues/86220" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/86220</a>
+              <a href="https://github.com/Expensify/App/issues/91907" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91907</a>
+              <a href="https://github.com/Expensify/App/issues/91920" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91920</a>
+              <a href="https://github.com/Expensify/App/issues/91879" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91879</a>
+              <a href="https://github.com/Expensify/App/issues/91878" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91878</a>
+              <a href="https://github.com/Expensify/App/issues/91876" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91876</a>
+              <a href="https://github.com/Expensify/App/issues/91875" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91875</a>
+              <a href="https://github.com/Expensify/App/issues/91874" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/91874</a>
+              <a href="https://github.com/Expensify/App/issues/92645" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/92645</a>
+              <a href="https://github.com/Expensify/App/issues/72125" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/issues/72125</a>
+              <a href="https://github.com/Expensify/App/pull/70852" style="color:#9B2C2C;text-decoration:underline;display:block;">https://github.com/Expensify/App/pull/70852</a>
+            </div>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- FOOTER -->
+      <tr><td>
+        <div style="height:1px;background:#E7E1D4;margin-bottom:14px;"></div>
+        <div style="font-size:11px;color:#6B6B6B;text-align:center;">Automated read-only triage &middot; no actions were taken on your behalf</div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+
+</body>
+</html>
